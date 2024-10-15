@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-11/12 mx-auto">
+        <nav>
+            <div class="flex justify-between items-center py-3 shadow-md">
+                <h3 class="font-bold text-2xl">Tasty HUT</h3>
+                <div>
+                    <button class="btn text-xl font-bold btn-warning"> sign Up</button>
+                </div>
+            </div>
+            
+        </nav>
+        <!-- hero section -->
+        <section class="bg-cover bg-center bg-[url('../images/banner_1.png')]">
+            <div>
+                <div class="lg:w-6/12 space-y-6 mx-auto text-center py-24">
+                <h1 class="text-6xl text-white font-bold">Taste Our Delicious Best Foods</h1>
+                <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+                <div class="">
+                    <input
+  type="text" onclick="searchingData()" 
+  placeholder="Type here" id="searchdata"
+  class="input input-bordered input-warning lg:w-full max-w-xs gap-2" />
+  <button class="btn btn-warning font-bold">search</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+    </header>
+    <main class="w-11/12 mx-auto">
+        <section class="py-24">
+            <h2 class="text-3xl font-bold text-center pb-16">Your Favourite Food</h2>
+            <div id="category" class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+               
+                <!-- <div class="shadow-xl rounded-xl border border-1">
+                    <div class="flex gap-8 items-center">
+                        <div class="flex-1 h-[200px]"><img class="w-full rounded-xl h-full object-cover" src="images/banner_1.png" alt=""></div>
+                        <div class="space-y-2 flex-1">
+                            <h3 class="font-bold text-2xl">Chicken Handi</h3>
+                            <p>There are many variations of passages of available, but the majority have suffered</p>
+                            <button class="btn text-yellow-400">Show Deatils</button>
+                        </div>
+                    </div>
+                    </div> -->
+                    <!-- dynamic-close -->
+                
+            </div>
+            <div class="text-center py-12">
+                <button onclick="itemall()" class="btn text-center bg-warning font-bold text-xl">All item</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer w-11/12 mx-auto bg-base-200 text-base-content p-10">
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-warning join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </footer>
+<!-- modal -->
+ <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="customModal.showModal()">open modal</button> -->
+<dialog id="customModal" class="modal">
+  <div class="modal-box" >
+    <div id="modalbox">
+
+    </div>
+   
+    
+  </div>
+</dialog>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
